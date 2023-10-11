@@ -13,7 +13,7 @@ const Item = (p) => {
     return (
         <div className='item-item' onClick={()=>{
             console.log("itemDetail 요청");
-            const url = "http://localhost:8090/SpringBoot2/PlayerDetail.do?name="+p.item.name;
+            const url = "http://13.125.47.82:8090/SpringBoot2/PlayerDetail.do?name="+p.item.name;
 
             axios.get(url, {name : p.item.name})
             .then((res)=>{
